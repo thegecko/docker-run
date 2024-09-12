@@ -14,7 +14,7 @@ var endsWith = function(str, suffix) {
 var run = function(image, opts) {
   if (!opts) opts = {}
 
-  var request = docker(opts.host, {version:'v1.14'})
+  var request = docker({host: opts.host, version: opts.version || 'v1.21'})
   var that = new events.EventEmitter()
   var tty = !!opts.tty
 
