@@ -190,6 +190,10 @@ var run = function(image, opts) {
     that.emit('error', err)
   }
 
+  if (opts.beforeCreate) {
+    opts.beforeCreate(copts, that)
+  }
+
   create(function(err, container) {
     if (err) return onerror(null, err)
 
