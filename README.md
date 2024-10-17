@@ -3,15 +3,15 @@
 Start a docker image and attach to it
 
 ```
-npm install docker-run
+npm install @thegecko/docker-run
 ```
 
-[There is also a command line tool available](https://github.com/mafintosh/docker-run#command-line-usage)
+[There is also a command line tool available](https://github.com/thegecko/docker-run#command-line-usage)
 
 ## Usage
 
 ``` js
-var run = require('docker-run')
+var run = require('@thegecko/docker-run')
 
 var child = run('mafintosh/dev', {tty:true})
 
@@ -82,7 +82,7 @@ Emitted if the container experiences a fatal error
 To install the command line tool do
 
 ```
-npm install -g docker-run
+npm install -g @thegecko/docker-run
 ```
 
 And then run
