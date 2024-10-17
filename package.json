@@ -1,6 +1,6 @@
 {
   "name": "@thegecko/docker-run",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Start a docker image and attach to it",
   "main": "index.js",
   "dependencies": {

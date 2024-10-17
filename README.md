@@ -47,7 +47,8 @@ Where options can be
   env: {
     FOO: 'bar'      // set env vars
   },
-  entrypoint: '/bin/bash' // override entrypoint on container
+  entrypoint: '/bin/bash' // override entrypoint on container,
+  beforeCreate: function (remoteOpts, instance) {} // remoteOpts is the generated docker remote JSON
 }
 ```
 
